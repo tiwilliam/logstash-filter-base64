@@ -48,7 +48,7 @@ base64 {
 
 ## Changelog
 
-You read about all changes in [CHANGELOG.md](CHANGELOG.md).
+You can read about all changes in [CHANGELOG.md](CHANGELOG.md).
 
 ## Need help?
 
