@@ -1,6 +1,6 @@
 # Logstash Plugin
 
-[![Travis Build Status](https://travis-ci.org/logstash-plugins/logstash-filter-base64.svg)](https://travis-ci.org/logstash-plugins/logstash-filter-base64)
+[![Travis Build Status](https://travis-ci.org/tiwilliam/logstash-filter-base64.svg)](https://travis-ci.org/tiwilliam/logstash-filter-base64)
 
 This is a plugin for [Logstash](https://github.com/elastic/logstash).
 
