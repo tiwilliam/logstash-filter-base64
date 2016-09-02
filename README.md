@@ -36,15 +36,15 @@ base64 {
 
 * **action**
 
-  The type of base64 transformation (`decode` or `encode`). (Default: `decode`)
+  The type of base64 transformation (`decode` or `encode`). Defaults to `decode`.
 
 * **field**
 
-  The field to encode/decode in-place. (Default: `message`)
+  The field to encode/decode in-place. Defaults to `message`.
 
 * **tag_on_failure**
 
-  Append values to the `tags` field on encode/decode failure. (Default: `["_base64failure"]`)
+  Append values to the `tags` field on encode/decode failure. Defaults to `["_base64failure"]`.
 
 ## Changelog
 
