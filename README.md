@@ -34,17 +34,17 @@ base64 {
 
 ## Filter options
 
-- **action**
-The type of base64 transformation (`decode` or `encode`).
-Default value: `decode`
+* **action**
 
-- **field**
-The field to encode/decode in-place.
-Default value: `message`
+  The type of base64 transformation (`decode` or `encode`). (Default: `decode`)
 
-- **tag_on_failure**
-Append values to the `tags` field on encode/decode failure.
-Default value: `["_base64failure"]`
+* **field**
+
+  The field to encode/decode in-place. (Default: `message`)
+
+* **tag_on_failure**
+
+  Append values to the `tags` field on encode/decode failure. (Default: `["_base64failure"]`)
 
 ## Changelog
 
