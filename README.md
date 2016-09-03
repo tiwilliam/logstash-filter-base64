@@ -1,6 +1,7 @@
 # Logstash Base64 Filter Documentation
 
 [![Travis Build Status](https://travis-ci.org/tiwilliam/logstash-filter-base64.svg)](https://travis-ci.org/tiwilliam/logstash-filter-base64)
+[![Gem Version](https://badge.fury.io/rb/logstash-filter-base64.svg)](https://badge.fury.io/rb/logstash-filter-base64)
 
 This filter helps you to base64 decode/encode your fields.
 
