@@ -6,15 +6,6 @@ require "logstash/namespace"
 
 class LogStash::Filters::Base64 < LogStash::Filters::Base
 
-  # This is how you configure this filter
-  # from your Logstash config.
-  #
-  # filter {
-  #   base64 {
-  #     field => "my_field"
-  #   }
-  # }
-  #
   config_name "base64"
 
   # The type of base64 transformation
