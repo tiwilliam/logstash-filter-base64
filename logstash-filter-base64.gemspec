@@ -2,7 +2,7 @@ Gem::Specification.new do |s|
   s.name = 'logstash-filter-base64'
   s.version = '1.0.2'
   s.licenses = ['Apache License (2.0)']
-  s.summary = "This base64 filter help you encode and decode fields."
+  s.summary = "This filter helps you encode and decode fields."
   s.description = "This gem is a Logstash plugin required to be installed on top of the Logstash core pipeline using `logstash-plugin install logstash-filter-base64`. This gem is not a stand-alone program"
   s.authors = ["William Tisäter"]
   s.email = 'william@defunct.cc'
@@ -19,6 +19,6 @@ Gem::Specification.new do |s|
   s.metadata = { "logstash_plugin" => "true", "logstash_group" => "filter" }
 
   # Gem dependencies
-  s.add_runtime_dependency "logstash-core-plugin-api", "~> 1.0"
+  s.add_runtime_dependency "logstash-core-plugin-api", "~> 2.0"
   s.add_development_dependency 'logstash-devutils'
 end
