@@ -1,3 +1,6 @@
+## 1.0.3
+- Update development requirements
+
 ## 1.0.2
 - Update RubyGems description
 
