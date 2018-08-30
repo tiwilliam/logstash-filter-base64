@@ -47,6 +47,10 @@ base64 {
 
   Append values to the `tags` field on encode/decode failure. Defaults to `["_base64failure"]`.
 
+* **strict** 
+
+  Toggle Base64 de- and encoding mode. With strict = true the plugin complies with RFC 4648, otherwise with RFC 2045. Defaults to `true` 
+  
 ## Changelog
 
 You can read about all changes in [CHANGELOG.md](CHANGELOG.md).
