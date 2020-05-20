@@ -17,6 +17,9 @@ class LogStash::Filters::Base64 < LogStash::Filters::Base
   # Append values to the `tags` field on failure
   config :tag_on_failure, :validate => :array, :default => ["_base64failure"]
 
+  # The Base64 de-/encoding mode
+  config :strict, :validate => :boolean, :default => true
+
   private
   def filter_failed(event, tags)
     tags.each {|tag| event.tag(tag)}
@@ -34,15 +37,24 @@ class LogStash::Filters::Base64 < LogStash::Filters::Base
       return filter_failed(event, @tag_on_failure)
     end
 
-    begin
+    if @strict
+      begin
+        case @action
+        when "encode"
+          event.set(@field, Base64.strict_encode64(value))
+        when "decode"
+          event.set(@field, Base64.strict_decode64(value))
+        end
+      rescue ArgumentError, TypeError
+        return filter_failed(event, @tag_on_failure)
+      end
+    else
       case @action
       when "encode"
-        event.set(@field, Base64.strict_encode64(value))
+        event.set(@field, Base64.encode64(value))
       when "decode"
-        event.set(@field, Base64.strict_decode64(value))
+        event.set(@field, Base64.decode64(value))
       end
-    rescue ArgumentError, TypeError
-      return filter_failed(event, @tag_on_failure)
     end
 
     filter_matched(event)
